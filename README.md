@@ -10,6 +10,17 @@ Currently **only macOS 10.13+, Android (with Play support libraries), and Window
 
 #### IMPORTANT NOTE: you must enable experimental features in Chrome by entering `chrome://flags/#enable-experimental-web-platform-features` as a URL into your Chrome browser and clicking ENABLE.
 
+#### METHODS
+```
+detectText()
+  - Accepts a parameter of type p5.Image or p5.MediaElement
+  - Returns an Array of Objects {x, y, w, h, rawValue}
+ 
+detectFaces()
+  - Accepts a parameter of type p5.Image or p5.MediaElement
+  - Returns an Array of Objects {x, y, w, h} (landmarks coming once there is better support)
+```
+
 Examples working on Online Editor *-- tested 5-9-19 on Windows 10 Chrome 74.0.3729.131*
 - [Text Detection](https://editor.p5js.org/stalgiag/sketches/gWt90AgKg)
 - [Webcam Face Detection](https://editor.p5js.org/stalgiag/sketches/PTjy00828)
